@@ -12,8 +12,18 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.hero-container, footer {
+header, .hero-container, footer {
+    display: flex;
     background: #1F2937;
+}
+
+header {
+    gap: 16px;
+    padding: 16px;
+}
+
+.hero-container div {
+    flex: 1;
 }
 
 .hero-main {
@@ -27,9 +37,34 @@ body {
     color: #E5E7EB;
 }
 
+.img-placeholder {
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-logo {
     font-size: 24px;
     color: #F9FAF8;
+    margin-right: auto;
+}
+
+.figure-container {
+    display: flex;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3882f6;
+    border-radius: 10px;
 }
 
 .call-to-action, button {
@@ -52,6 +87,17 @@ body {
     color: #1F2937;
 }
 
+.cite {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: end;
+}
+
 .dark {
     color: #1F2937
+}
+
+.center {
+    text-align: center;
 }
