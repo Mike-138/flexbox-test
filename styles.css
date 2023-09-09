@@ -28,6 +28,7 @@ section {
 }
 
 header > .gutter {
+    align-items: center;
     gap: 24px;
 }
 
@@ -88,17 +89,27 @@ figure {
 
 .call-to-action, button {
     background: #3882f6;
-    border-radius: 10px;
 }
 
 .call-to-action {
     padding: 48px;
+    border-radius: 10px;
     justify-content: space-around;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 4px 16px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .information-header {
     font-size: 36px;
-    font-weight: bolder;
+    font-weight: bold;
     color: #1F2937
 }
 
@@ -137,4 +148,9 @@ a {
 
 .center {
     text-align: center;
+}
+
+.white {
+    border: 2px solid white;
+    align-self: center;
 }
