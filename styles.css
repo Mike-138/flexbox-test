@@ -127,6 +127,10 @@ footer > .gutter {
     justify-content: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .dark {
     color: #1F2937
 }
