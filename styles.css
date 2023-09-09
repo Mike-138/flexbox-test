@@ -12,17 +12,30 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.gutter {
+    display: flex;
+    flex: 1;
+    margin: 48px 15%;
+}
+
 header, .hero-container, footer {
     display: flex;
     background: #1F2937;
 }
 
-header {
-    gap: 16px;
-    padding: 16px;
+section {
+    display: flex;
 }
 
-.hero-container div {
+header > .gutter {
+    gap: 24px;
+}
+
+.hero-container > .gutter {
+    gap: 48px;
+}
+
+.hero-container > .gutter > div {
     flex: 1;
 }
 
@@ -35,6 +48,11 @@ header {
 .hero-secondary, .header-link {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.info-container > .gutter {
+    flex-direction: column;
+    gap: 48px;
 }
 
 .img-placeholder {
@@ -58,6 +76,7 @@ figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 4px;
 }
 
 .card-img {
@@ -69,6 +88,12 @@ figure {
 
 .call-to-action, button {
     background: #3882f6;
+    border-radius: 10px;
+}
+
+.call-to-action {
+    padding: 48px;
+    justify-content: space-around;
 }
 
 .information-header {
@@ -79,6 +104,10 @@ figure {
 
 .quote-container {
     background: #E5E7EB;
+}
+
+.quote-container > .gutter {
+    flex-direction: column;
 }
 
 .quote {
@@ -92,6 +121,10 @@ figure {
     font-weight: bolder;
     color: #1F2937;
     text-align: end;
+}
+
+footer > .gutter {
+    justify-content: center;
 }
 
 .dark {
